@@ -14,7 +14,7 @@ A real-time Chrome Extension that provides **AI-powered explanations** for selec
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 - JavaScript (Vanilla)
 - Chrome Extensions API (Manifest V3)
 - Hugging Face Inference API
@@ -63,7 +63,7 @@ screenshot3.png
 
 ---
 
-## 🔐 Security Note
+##  Security Note
 API keys are not included in this repository.
 
 To run locally:
