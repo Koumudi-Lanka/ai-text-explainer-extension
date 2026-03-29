@@ -1,8 +1,12 @@
 #  AI Text Explainer Chrome Extension
 
 ##  Overview
-A real-time Chrome Extension that provides **AI-powered explanations** for selected text on web pages, reducing context switching and improving reading efficiency.
+AI-powered Chrome extension that explains selected text in real-time, reducing context switching while browsing.
+---
 
+##  Problem Solved
+Users often switch tabs to search meanings of unfamiliar words, breaking focus.  
+This extension provides instant explanations without leaving the page.
 ---
 
 ##  Features
@@ -30,15 +34,21 @@ https://router.huggingface.co/v1/chat/completions
 
 ---
 
-##  How It Works (Architecture)
+##  Workflow
 
 1. User selects text on a webpage  
-2. `content.js` captures selected word + context  
-3. Message sent to `background.js`  
-4. `background.js` calls Hugging Face API  
-5. AI generates explanation  
-6. Response sent back to content script  
-7. Popup displayed near cursor  
+2. Content script captures selected text  
+3. Background script sends request to Hugging Face API  
+4. LLM generates explanation  
+5. Response displayed in a floating popup  
+
+---
+
+##  Use Cases
+- Students understanding complex topics  
+- Reading technical blogs (Medium, Wikipedia)  
+- Quick learning without switching tabs  
+- Improving productivity while browsing
 
 ---
 
